@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     android:padding="8dp"
     tools:context=".MainActivity">
@@ -11,10 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:src="@drawable/ic_baseline_contacts_24"/>
+            android:src="@drawable/ic_baseline_contacts_24" />
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,22 +27,22 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
-                android:textStyle="bold"
+                android:text="Nico Michel"
                 android:textColor="@color/black"
-                android:text="Nico Michel"/>
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:text="mini1013@h-ka.de"/>
+                android:text="mini1013@h-ka.de"
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:text="0176123456789"/>
+                android:text="0176123456789"
+                android:textSize="14sp" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -49,42 +52,55 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#1e90ff"
-        android:textColor="@color/white"
-        android:text="Kontaktieren"/>
+        android:text="Kontaktieren"
+        android:textColor="@color/white" />
 
     <EditText
         android:id="@+id/edtMessage"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:hint="Nachricht eingeben..."/>
+        android:hint="Nachricht eingeben..." />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSendMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ff0000"
-        android:textColor="@color/white"
-        android:text="Nachricht Absenden"/>
+        android:text="Nachricht Absenden"
+        android:textColor="@color/white" />
 
     <EditText
         android:id="@+id/edtUrl"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnOpen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Öffnen"
-        android:onClick="openUrl"/>
+        android:onClick="openUrl"
+        android:text="Öffnen" />
+
     <TextView
         android:id="@+id/leer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/txtMessage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/departure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Departure" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karte" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
